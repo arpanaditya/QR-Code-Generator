@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import React, { useState } from "react";
 
 export default function QRCode() {
   const [value, setvalue] = useState("HelloWorld");
