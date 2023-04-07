@@ -1,5 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(166 221 249);
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 50vh;
+  width: 50vw;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+}
+
+.text-container {
+  height: 20vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container input {
+  height: 50px;
+  width: 50%;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 0 10px;
+  outline: none;
+  border: 2px solid black;
+}
+
+.text-container button {
+  height: 50px;
+  width: 30%;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 0 10px;
+  cursor: pointer;
+  background-color: rgb(57, 56, 56);
+  color: white;
+}
+
+.text-container button:active {
+  background-color: rgb(143, 138, 138);
 }
 
 .App-logo {
@@ -34,5 +95,33 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (max-width: 300px) {
+  .img-container img {
+    height: 60%;
+    width: 100%;
+  }
+
+  .text-container input {
+    height: 25px;
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (max-width: 480px) {
+  .img-container img {
+    height: 60%;
+    width: 100%;
+  }
+
+  .text-container input {
+    height: 35px;
+    width: 100%;
+    font-size: 20px;
   }
 }
